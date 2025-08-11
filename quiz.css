@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(24, 23, 23);
+  background-image: url(https://pnghq.com/wp-content/uploads/quiz-full-hd-png-350x127.png),
+    url(https://png.pngtree.com/png-vector/20220530/ourmid/pngtree-quiz-banner-in-pop-art-style-png-image_4763343.png),
+    url(https://www.kidsclubhq.com/uploads/Kids%20Quiz%20Time.png),
+    url(https://www.paramsmagazine.com/wp-content/uploads/2020/09/Quiz.png);
+  background-size: 500px;
+  background-position: center 50px, right, left, bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-container {
+  background: linear-gradient(
+    45deg,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  /* background: rgb(16, 16, 16, 0.4); */
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  text-align: center;
+}
+
+#question {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#answer-buttons button {
+  display: block;
+  margin: 5px auto;
+  background: #d6d5d5;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+#answer-buttons button:hover:not(:disabled) {
+  background-color: #ccc;
+  box-shadow: 0px 0px 20px rgb(1, 6, 1);
+  transform: scale(1.1);
+}
+#next-btn {
+  background-color: #ecf006a1;
+  transition: 0.3s;
+}
+#next-btn:hover {
+  box-shadow: 0px 0px 20px rgb(1, 6, 1);
+  transform: scale(1.1);
+}
+.correct {
+  background-color: #4caf50 !important;
+  color: white;
+}
+
+.wrong {
+  background-color: #f44336 !important;
+  color: white;
+}
+
+#score {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
